@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    background-color: var(--secondary-color);
+    font-family: 'Pixelify Sans';
+}
+
+.mainCont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 90dvh;
+    width: 100%;
+}
+
+.gameBox{
+    border: solid var(--secondary-color) 3px;
+    background-color: var(--primary-color);
+}
+
+.boxValue{
+    height: 100%;
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: black 4px 4px;
+}
+
+.playerOptions{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.playerOptions h1{
+    grid-column: span 2;
+    margin: auto;
+    text-shadow: white 1.5px 1.5px;
+    letter-spacing: .5px;
+}
+
+.playerOptions button{
+    font-size: 3rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 0;
+    font-family: 'Pixelify Sans';
+}
+
+
+
+/* Utility Class */
+
+.hidden{
+    display: none;
+}
+
+:root{
+    --primary-color: #bf94ff;
+    --secondary-color: #18181b
+}
